@@ -5,7 +5,7 @@ const form = document.querySelector(".form")
 
 function promiseMaker(delay, state) {
     return new Promise((resolve, reject) => {
-        const timerID = setInterval(() => {
+        const timerID = setTimeout(() => {
             if (state === "fulfilled") {
                 resolve(delay)
             } else {
